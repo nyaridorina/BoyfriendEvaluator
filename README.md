@@ -1,5 +1,7 @@
 # Boyfriend Evaluator
 
+https://nyaridorina.github.io/BoyfriendEvaluator/
+
 ## Overview
 
 The **Boyfriend Evaluator** is a fun, lighthearted web application that allows users to evaluate their boyfriend's qualities based on ten different questions. Users can rate on a scale from 1 to 10, and the application calculates an overall score with a corresponding message. The project is designed to be visually engaging, utilizing emojis and vibrant colors, making the user experience playful and enjoyable.
