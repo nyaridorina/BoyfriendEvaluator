@@ -1,58 +1,89 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  body {
-    font-family: sans-serif;
-  }
-  
-  .container {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 20px;
-  }
-  
-  h1 {
-    text-align: center;
-    margin-bottom: 20px;
-  }
-  
-  p {
-    margin-bottom: 10px;
-  }
-  
-  form {
-    margin-bottom: 20px;
-  }
-  
-  ol li {
-    margin-bottom: 10px;
-  }
-  
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #ffe6f7;
+  color: #333;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+}
 
-  button[type="submit"] {
-    display: block;
-    margin: 0 auto;
-    background-color: #f8bdfd;
-    color: black;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 5px;
-    font-size: 16px;
-    cursor: pointer;
-  }
-  
-  button[type="submit"]:hover {
-    background-color: #e37aec;
-  }
-  
-  
-  #result {
-    text-align: center;
-    font-size: 24px;
-    font-weight: bold;
-    margin-top: 20px;
-  }
-  
+header {
+  text-align: center;
+  background-color: #ff9ecb;
+  padding: 20px;
+  border-radius: 10px;
+  margin: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+  font-size: 2.5em;
+  margin-bottom: 10px;
+}
+
+header p {
+  font-size: 1.2em;
+}
+
+form {
+  max-width: 700px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #ffe4ed;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+ol {
+  padding-left: 20px;
+}
+
+ol li {
+  margin-bottom: 20px;
+}
+
+label {
+  font-size: 1.1em;
+  color: #ff4b8a;
+}
+
+input[type="number"] {
+  width: 50px;
+  padding: 5px;
+  font-size: 1em;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button[type="submit"] {
+  display: block;
+  margin: 20px auto;
+  background-color: #ff4b8a;
+  color: #fff;
+  border: none;
+  padding: 15px 30px;
+  border-radius: 50px;
+  font-size: 1.5em;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button[type="submit"]:hover {
+  background-color: #e03370;
+}
+
+#result {
+  text-align: center;
+  font-size: 1.8em;
+  font-weight: bold;
+  margin-top: 30px;
+}
+
+.result-display {
+  animation: fadeIn 1s;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
