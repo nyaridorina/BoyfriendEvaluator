@@ -1,19 +1,25 @@
 body {
-  font-family: 'Arial', sans-serif;
-  background-color: #ffe6f7;
+  font-family: 'Roboto', sans-serif;
+  background-color: #ffccd5;
   color: #333;
   line-height: 1.6;
   margin: 0;
   padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
 }
 
 header {
-  text-align: center;
+  text-align: left;
   background-color: #ff9ecb;
   padding: 20px;
   border-radius: 10px;
-  margin: 20px;
+  margin-bottom: 20px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 800px;
 }
 
 header h1 {
@@ -26,12 +32,13 @@ header p {
 }
 
 form {
-  max-width: 700px;
-  margin: 20px auto;
+  max-width: 800px;
+  width: 100%;
   padding: 20px;
   background-color: #ffe4ed;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: left;
 }
 
 ol {
