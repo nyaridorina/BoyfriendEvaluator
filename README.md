@@ -15,26 +15,6 @@ The **Boyfriend Evaluator** is a fun, lighthearted web application that allows u
 - **CSS**: Styling, including colors, fonts, and layout.
 - **JavaScript**: Interactivity, form submission handling, and dynamic result display.
 
-## Installation
-
-To run the Boyfriend Evaluator locally:
-
-1. Clone the repository:
-   ```
-   git clone https://github.com/yourusername/boyfriend-evaluator.git
-   ```
-
-2. Navigate to the project directory:
-   ```
-   cd boyfriend-evaluator
-   ```
-
-3. Open the `index.html` file in your web browser:
-   ```
-   open index.html
-   ```
-
-No additional dependencies are required, as the project uses vanilla HTML, CSS, and JavaScript.
 
 ## Usage
 
