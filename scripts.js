@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const result = document.getElementById("result");
 
   form.addEventListener("submit", (event) => {
-    event.preventDefault(); // Prevent form from submitting normally
+    event.preventDefault(); // Prevents default form submission
 
     let score = 0;
     const inputs = form.querySelectorAll("input[type='number']");
@@ -11,10 +11,10 @@ document.addEventListener("DOMContentLoaded", () => {
     // Calculate total score
     inputs.forEach((input) => {
       const value = parseInt(input.value, 10);
-      score += isNaN(value) ? 0 : value; // Ensure NaN values are treated as 0
+      score += isNaN(value) ? 0 : value; // Treat NaN as 0
     });
 
-    // Determine the message based on the total score
+    // Determine message based on score
     let message = "";
     if (score < 20) {
       message = "😞 Your partner needs a lot of improvement!";
@@ -28,8 +28,14 @@ document.addEventListener("DOMContentLoaded", () => {
       message = "🎉 Congratulations, you have an amazing partner! 💖";
     }
 
-    // Display the result message
-    result.textContent = message;
-    result.classList.add("result-display");
+    // Display the result
+    result.classList.remove("result-display"); // Remove class to reset animation
+    result.textContent = message; // Set the message text
+    // Trigger reflow to restart the animation
+    void result.offsetWidth;
+    result.classList.add("result-display"); // Add class to start animation
+
+    // Optional: Scroll to the result for better visibility
+    result.scrollIntoView({ behavior: "smooth" });
   });
 });
