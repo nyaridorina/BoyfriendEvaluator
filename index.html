@@ -4,27 +4,62 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Partner Evaluator</title>
-  <link rel="stylesheet" href="styles.css"> <!-- Link to your CSS file -->
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <header class="test-header">
-    <h1>Partner Evaluator</h1>
-    <p>📈 Please answer the following 10 questions on a scale of 1 to 10: 📏</p>
-  </header>
-
-  <!-- Your test content goes here -->
-  <main class="test-content">
-    <!-- Example Question -->
-    <div class="question">
-      <p>1. How satisfied are you with our service?</p>
-      <!-- Rating Scale (1 to 10) -->
-      <div class="rating-scale">
-        <!-- Radio buttons or other input elements for rating -->
-      </div>
-    </div>
-    <!-- Repeat for other questions -->
-  </main>
-
-  <script src="script.js"></script> <!-- Link to your JS file -->
+  <div id="container">
+    <header>
+      <h1>🤝 Partner Evaluator 🤝</h1>
+      <p>📈 Evaluate your relationships with our 10-step test!</p>
+    </header>
+    <form id="questions-form">
+      <ol>
+        <li>
+          <label for="q1">💬 How much does your partner listen to you when you talk?</label>
+          <input type="number" id="q1" name="q1" min="1" max="10" required>
+        </li>
+        <li>
+          <label for="q2">💫 How often does your partner surprise you with thoughtful gestures?</label>
+          <input type="number" id="q2" name="q2" min="1" max="10" required>
+        </li>
+        <li>
+          <label for="q3">🧐 How does your partner make you feel about yourself?</label>
+          <input type="number" id="q3" name="q3" min="1" max="10" required>
+        </li>
+        <li>
+          <label for="q4">🛡️ How much does your partner respect your boundaries?</label>
+          <input type="number" id="q4" name="q4" min="1" max="10" required>
+        </li>
+        <li>
+          <label for="q5">🌿 How much effort does your partner put into the relationship?</label>
+          <input type="number" id="q5" name="q5" min="1" max="10" required>
+        </li>
+        <li>
+          <label for="q6">🤖 How much do you trust your partner?</label>
+          <input type="number" id="q6" name="q6" min="1" max="10" required>
+        </li>
+        <li>
+          <label for="q7">🤟 How much do you have in common with your partner?</label>
+          <input type="number" id="q7" name="q7" min="1" max="10" required>
+        </li>
+        <li>
+          <label for="q8">🤗 How much do you enjoy spending time with your partner?</label>
+          <input type="number" id="q8" name="q8" min="1" max="10" required>
+        </li>
+        <li>
+          <label for="q9">🗫 How well does your partner communicate with you?</label>
+          <input type="number" id="q9" name="q9" min="1" max="10" required>
+        </li>
+        <li>
+          <label for="q10">😂 How much does your partner make you laugh?</label>
+          <input type="number" id="q10" name="q10" min="1" max="10" required>
+        </li>
+      </ol>
+      <button type="submit">⭐ Evaluate ⭐</button>
+    </form>
+    <div id="result"></div>
+  </div>
+  
+  <script src="scripts.js"></script>
 </body>
 </html>
