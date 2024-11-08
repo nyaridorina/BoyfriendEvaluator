@@ -73,6 +73,7 @@ form {
   background-color: #f9f9f9; /* Light background for inputs */
 }
 
+/* Submit Button Styling */
 button[type="submit"] {
   display: block;
   width: 100%;
