@@ -13,15 +13,15 @@ document.addEventListener("DOMContentLoaded", () => {
 
     let message = "";
     if (score < 20) {
-      message = "😞 Your boyfriend needs a lot of improvement!";
+      message = "😞 Your partner needs a lot of improvement!";
     } else if (score < 50) {
-      message = "😐 Your boyfriend needs to step up his game.";
+      message = "😐 Your partner needs to step up their game.";
     } else if (score < 70) {
-      message = "😊 Your boyfriend is decent, but there's room for improvement.";
+      message = "😊 Your partner is decent, but there's room for improvement.";
     } else if (score < 90) {
-      message = "😍 Your boyfriend is pretty great!";
+      message = "😍 Your partner is pretty great!";
     } else {
-      message = "🎉 Congratulations, you have an amazing boyfriend! 💖";
+      message = "🎉 Congratulations, you have an amazing partner! 💖";
     }
 
     result.innerHTML = `<p>${message}</p>`;
