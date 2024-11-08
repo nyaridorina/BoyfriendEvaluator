@@ -7,8 +7,8 @@
 
 body {
   font-family: 'Roboto', sans-serif;
-  background-color: #ffccd5;
-  color: #333;
+  background-color: #96d3ff; /* Updated background color */
+  color: #000; /* Changed text color to black */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -16,15 +16,17 @@ body {
   padding: 20px;
 }
 
+/* Container for centering content */
 #container {
   width: 100%;
   max-width: 800px;
-  background-color: #ffe4ed;
+  background-color: #ffffff; /* White background for contrast */
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   padding: 30px;
 }
 
+/* Header Styling */
 header {
   text-align: center;
   margin-bottom: 20px;
@@ -32,15 +34,16 @@ header {
 
 header h1 {
   font-size: 2em;
-  color: #ff4b8a;
+  color: #000; /* Ensure title text is black */
   margin-bottom: 10px;
 }
 
 header p {
   font-size: 1.1em;
-  color: #555;
+  color: #000; /* Ensure description text is black */
 }
 
+/* Form Styling */
 form {
   width: 100%;
 }
@@ -58,7 +61,7 @@ label {
   display: block;
   margin-bottom: 5px;
   font-size: 1em;
-  color: #ff4b8a;
+  color: #000; /* Ensure labels are black */
 }
 
 input[type="number"] {
@@ -67,13 +70,16 @@ input[type="number"] {
   font-size: 1em;
   border: 1px solid #ccc;
   border-radius: 5px;
+  color: #000; /* Ensure input text is black */
+  background-color: #f9f9f9; /* Light background for inputs */
 }
 
+/* Submit Button Styling */
 button[type="submit"] {
   display: block;
   width: 100%;
-  background-color: #ff4b8a;
-  color: #fff;
+  background-color: #007BFF; /* Changed to a blue shade for visibility */
+  color: #fff; /* White text for contrast */
   border: none;
   padding: 15px;
   border-radius: 50px;
@@ -83,9 +89,10 @@ button[type="submit"] {
 }
 
 button[type="submit"]:hover {
-  background-color: #e03370;
+  background-color: #0056b3; /* Darker blue on hover */
 }
 
+/* Result Display Styling */
 #result {
   text-align: center;
   font-size: 1.5em;
@@ -93,10 +100,17 @@ button[type="submit"]:hover {
   margin-top: 20px;
   opacity: 0;
   transition: opacity 1s;
+  color: #000; /* Ensure result text is black */
 }
 
 .result-display {
   opacity: 1;
+}
+
+/* Fade-In Animation */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
 }
 
 /* Responsive Styles */
@@ -124,5 +138,32 @@ button[type="submit"]:hover {
 
   #result {
     font-size: 1.3em;
+  }
+}
+
+@media (min-width: 601px) and (max-width: 1024px) {
+  header {
+    padding: 20px;
+  }
+
+  header h1 {
+    font-size: 2.2em;
+  }
+
+  header p {
+    font-size: 1.1em;
+  }
+
+  form {
+    padding: 20px;
+  }
+
+  button[type="submit"] {
+    font-size: 1.3em;
+    padding: 12px 25px;
+  }
+
+  input[type="number"] {
+    width: 55px;
   }
 }
